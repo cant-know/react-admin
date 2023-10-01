@@ -1,0 +1,12 @@
+$color:pink;
+
+body{
+  background-color: $color;
+  // 禁止用户选中文字
+  user-select: none;
+}
+
+img{
+  // 禁止拖动图片
+  -webkit-user-drag: none;
+}
