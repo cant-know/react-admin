@@ -1,9 +1,7 @@
-$color:pink;
-
-body{
-  background-color: $color;
+html,body,div{
   // 禁止用户选中文字
   user-select: none;
+  height: 100%;
 }
 
 img{

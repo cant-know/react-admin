@@ -5,9 +5,13 @@ import 'reset-css'
 // 全局样式
 import './styles/index.scss'
 import Router from './router/index.tsx'
+import { Provider } from 'react-redux'
+import store from './store/index.ts'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <Router />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <Router />
+    </React.StrictMode>,
+  </Provider>
 )
